@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/swiping_index_menu_smoother_animation"
+            android:title="@string/smoother_swiping_animation"/>
+        <item
+            android:id="@+id/swiping_index_menu_smoother_video"
+            android:title="@string/smoother_video"/>
+    </group>
+
+</menu><!-- From: file:/D:/LWV/AS/ScreensProVAW/app/src/main/res/menu/swiping_index_menu.xml -->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="one_pixel">1px</dimen>
+    
+    <dimen name="favorite_button_height">32dp</dimen>
+    <dimen name="favorite_button_width">35dp</dimen>
+    
+    <dimen name="header_high">40dp</dimen>
+</resources>

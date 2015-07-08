@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/setting_list_item_checked_relative_layout"
+    >
+
+    <TextView
+        android:id="@+id/setting_list_item_checked_titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/setting_list_item_checked_subscripttextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_list_item_checked_titleText"
+        android:layout_below="@+id/setting_list_item_checked_titleText"
+        android:layout_toLeftOf="@+id/setting_list_item_checked_checkBox"
+        android:text="Small Text"
+        android:paddingBottom="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <CheckBox
+        android:id="@+id/setting_list_item_checked_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/checkboxicon"
+        android:clickable="false"
+        
+        
+        />
+
+</RelativeLayout><!-- From: file:/D:/LWV/AS/ScreensProVAW/app/src/main/res/layout/setting_list_item_checked.xml -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/latest_menu_latest"
+        android:title="@string/latest_menu_latest"/>
+    <item
+        android:id="@+id/latest_menu_your_favourites"
+        android:title="@string/latest_menu_your_favourites"/>
+    <!-- <item
+        android:id="@+id/latest_menu_stored"
+        android:title="@string/latest_menu_stored" -->/>
+
+</menu><!-- From: file:/D:/LWV/AS/ScreensProVAW/app/src/main/res/menu/latest_menu.xml -->

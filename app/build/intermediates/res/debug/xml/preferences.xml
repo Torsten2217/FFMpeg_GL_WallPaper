@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Playback" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxSkipFrames"
+            android:summary="If your CPU is struggling, skip frames for better playback"
+            android:title="Skip Frames" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Wallpaper" >
+        <ListPreference
+            android:defaultValue="Mid"
+            android:entries="@array/wallpaper_resolution"
+            android:entryValues="@array/wallpaper_resolution"
+            android:key="listResolution"
+            android:summary="Select propriate wallpaper resolution for your device"
+            android:title="Wallpaper Resolution" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkboxStore"
+            android:summary="Store downloaded wallpapers for fast access"
+            android:title="Store Wallpaper" />
+    </PreferenceCategory>
+
+</PreferenceScreen><!-- From: file:/D:/LWV/AS/ScreensProVAW/app/src/main/res/xml/preferences.xml -->

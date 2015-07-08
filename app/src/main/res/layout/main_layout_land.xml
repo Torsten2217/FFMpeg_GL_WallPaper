@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A3448"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layoutTopbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_high"
+        android:background="#0F202E" >
+        
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/header_high"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/logo" 
+            android:contentDescription="@string/description"/>
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/topbar_search"
+            android:background="#15232b" />
+
+        <ImageView
+            android:id="@+id/topbar_search"
+            android:layout_width="62px"
+            android:layout_height="60px"
+            android:layout_toLeftOf="@+id/separator1"
+            android:background="#0F202E"
+            android:scaleType="fitXY"
+            android:src="@drawable/search_icon"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layout_search_box"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/separator1"
+            android:background="#0f202e"
+            android:gravity="right"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/topbar_search_show"
+                android:layout_width="62px"
+                android:layout_height="60px"
+                android:layout_alignParentLeft="true"
+                android:background="#0f202e"
+                android:scaleType="fitXY"
+                android:src="@drawable/search_icon"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/topbar_search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/topbar_close"
+                android:layout_toRightOf="@+id/topbar_search_show"
+                android:background="#0f202e"
+                android:hint="@string/search_text_default_text"
+                android:singleLine="true"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/topbar_close"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#0f202e"
+                android:scaleType="fitCenter"
+                android:src="@drawable/close_icon"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/topbar_search_show"
+                android:background="#888888" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutSort"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/topbar_menu"
+            android:background="#121A1E"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/textTitleSort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Sort - "
+                android:textSize="18sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textSort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/textTitleSort"
+                android:gravity="center_vertical"
+                android:text="Latest"
+                android:textSize="18sp"
+                android:textColor="#FFBA00" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/separator1"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/topbar_menu"
+            android:orientation="horizontal"
+            android:background="#15232b" />
+
+        <ImageView
+            android:id="@+id/topbar_menu"
+            android:layout_width="@dimen/header_high"
+            android:layout_height="@dimen/header_high"
+            android:layout_alignParentRight="true"
+            android:background="#0F202E"
+            android:scaleType="fitXY"
+            android:src="@drawable/settings_icon" 
+            android:contentDescription="@string/description"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#15232b" />
+
+            <LinearLayout
+                android:id="@+id/layoutAllCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#121A1E"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="Category - "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/textCategory"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#71CCE6" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="#121A1E"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/layoutFragments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#1A3448" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/layoutWallpaperFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center" 
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

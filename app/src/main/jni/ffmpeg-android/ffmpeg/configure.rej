@@ -1,0 +1,81 @@
+***************
+*** 70,75 ****
+    --shlibdir=DIR           install shared libs in DIR [PREFIX/lib]
+    --incdir=DIR             install includes in DIR [PREFIX/include]
+    --mandir=DIR             install man page in DIR [PREFIX/share/man]
+  
+  Configuration options:
+    --disable-static         do not build static libraries [no]
+--- 70,76 ----
+    --shlibdir=DIR           install shared libs in DIR [PREFIX/lib]
+    --incdir=DIR             install includes in DIR [PREFIX/include]
+    --mandir=DIR             install man page in DIR [PREFIX/share/man]
++   --soname-prefix=PREFIX   add PREFIX before the libraries soname
+  
+  Configuration options:
+    --disable-static         do not build static libraries [no]
+***************
+*** 1110,1115 ****
+      mandir
+      prefix
+      shlibdir
+  '
+  
+  CMDLINE_SET="
+--- 1111,1117 ----
+      mandir
+      prefix
+      shlibdir
++     soname_prefix
+  '
+  
+  CMDLINE_SET="
+***************
+*** 1544,1549 ****
+  libdir_default='${prefix}/lib'
+  mandir_default='${prefix}/share/man'
+  shlibdir_default="$libdir_default"
+  
+  # toolchain
+  ar_default="ar"
+--- 1546,1552 ----
+  libdir_default='${prefix}/lib'
+  mandir_default='${prefix}/share/man'
+  shlibdir_default="$libdir_default"
++ soname_prefix_default=""
+  
+  # toolchain
+  ar_default="ar"
+***************
+*** 1593,1599 ****
+  enable swscale_alpha
+  
+  # build settings
+- SHFLAGS='-shared -Wl,-soname,$$(@F)'
+  FFSERVERLDFLAGS=-Wl,-E
+  LIBPREF="lib"
+  LIBSUF=".a"
+--- 1596,1602 ----
+  enable swscale_alpha
+  
+  # build settings
++ SHFLAGS='-shared -Wl,-soname,$$(SONAME_PREFIX)$$(@F)'
+  FFSERVERLDFLAGS=-Wl,-E
+  LIBPREF="lib"
+  LIBSUF=".a"
+***************
+*** 3145,3150 ****
+  BINDIR=\$(DESTDIR)$bindir
+  DATADIR=\$(DESTDIR)$datadir
+  MANDIR=\$(DESTDIR)$mandir
+  SRC_PATH="$source_path"
+  SRC_PATH_BARE=$source_path
+  BUILD_ROOT="$PWD"
+--- 3148,3154 ----
+  BINDIR=\$(DESTDIR)$bindir
+  DATADIR=\$(DESTDIR)$datadir
+  MANDIR=\$(DESTDIR)$mandir
++ SONAME_PREFIX=$soname_prefix
+  SRC_PATH="$source_path"
+  SRC_PATH_BARE=$source_path
+  BUILD_ROOT="$PWD"

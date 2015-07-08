@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#0F202E">
+
+    <TextView
+        android:id="@+id/about_textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:background="#0F202E"
+        android:text="@string/about_title_text"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/about_frame"
+        android:layout_below="@+id/about_textview"/>
+
+    <RelativeLayout
+        android:id="@+id/about_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:background="#0F202E" >
+
+        <Button
+            android:id="@+id/about_close"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Close"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

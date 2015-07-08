@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Video As Wallpaper</string>
+    <string name="description">Provides beautiful video live wallpaper</string>
+    <string name="settings_menu_settings">Settings</string>
+    <string name="settings_menu_rate_review">Rate / Review App</string>
+    <string name="settings_menu_twitterpage">Twitter Page</string>
+    <string name="settings_menu_facebookpage">Facebook Page</string>
+    <string name="settings_menu_googleplus">G+ Page</string>
+    <string name="settings_menu_aboutscreenspro">About ScreensPro</string>
+    <string name="latest_menu_latest">Latest</string>
+    <string name="latest_menu_most_downloads">Most Downloads</string>
+    <string name="latest_menu_most_liked">Most Liked</string>
+    <string name="latest_menu_your_favourites">Your Favourites</string>
+    <string name="latest_menu_stored">Stored</string>
+
+    <!-- settings strings -->
+
+    <string name="settings_playback">Playback</string>
+    <string name="settings_wallpapers">Wallpapers</string>
+
+    <string-array name="wallpaper_resolution">
+        <item>Highest</item>
+        <item>Mid</item>
+        <item>Lowest</item>
+    </string-array>
+
+    <!-- Search Text Box default Text -->
+    <string name="search_text_default_text">Search</string>
+    <string name="user_help_text">Please select the ScreenPro Icon to set the live wallpaper</string>
+    <string name="connection_error">Unable to Connect to the ScreensPro Server</string>
+    <string name="video_not_available">This Video is not available for your Device</string>
+    <string name="video_not_available_for_criteria">Sorry, no videos found matching your query, Please try with different Keywords</string>
+    <string name="enter_search_key">Please enter search keyword </string>
+    <string name="search_key_should_be_four_char_long">Search key should be minimum three characters long. Please try again </string>
+    <string name="error_occurred_while_communicating_sever">An error has occurred while communicating to ScreensPro Server.</string>
+
+    <string-array name="wallpaperresolution_array">
+        <item>"Highest"</item>
+        <item>"Mid"</item>
+        <item>"Lowest"</item>
+    </string-array>
+    <string-array name="settings_title_array">
+        <item>PlayBack</item>
+        <item>Skip Frames</item>
+        <item>Wallpaper</item>
+        <!-- <item>Wallpaper Resolution</item> -->
+        <item>Store Wallpaper on SD card</item>
+    </string-array>
+    <string-array name="settings_subscript_array">
+        <item></item>
+        <item>If your CPU is struggling, skip frames for better playback</item>
+        <item></item>
+        <!-- <item>Set the wallpaper quality</item>  -->
+        <item>Store downloaded wallpapers for fast access</item>
+    </string-array>
+
+    <string name="screens_pro_folder_name">ScreenPro</string>
+    <string name="about_title_text">About</string>
+    <string name="about_title_link">www.screenspro.com</string>
+    <string name="highest">Highest</string>
+    <string name="mid">Mid</string>
+    <string name="lowest">Lowest</string>
+    <string name="cancel">Cancel</string>
+    <string name="smoother_swiping_animation">Smoother swiping animation</string>
+    <string name="smoother_video">Smoother Video</string>
+
+    <string name="video_frame_rate_text">Video Frame Rate:</string>
+    
+    <!--  Ads Keys-->
+    <string name="amazon_app_key">e75bdd112d194aab9541c79d0dc03c0a</string>
+    <string name="fps">FPS</string>
+    
+</resources>

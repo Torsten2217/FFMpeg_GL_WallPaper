@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_text_item_textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingLeft="15dp"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+<!-- From: file:/D:/LWV/AS/ScreensProVAW/app/src/main/res/layout/setting_item_header.xml -->

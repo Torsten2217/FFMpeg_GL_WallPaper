@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/settings_menu_settings"
+        android:title="@string/settings_menu_settings"/>
+    <item
+        android:id="@+id/settings_menu_rate_review"
+        android:title="@string/settings_menu_rate_review"/>
+    <item
+        android:id="@+id/settings_menu_twitterpage"
+        android:title="@string/settings_menu_twitterpage"/>
+    <item
+        android:id="@+id/settings_menu_facebookpage"
+        android:title="@string/settings_menu_facebookpage"/>
+    <item
+        android:id="@+id/settings_menu_googleplusplage"
+        android:title="@string/settings_menu_googleplus"/>
+    <item
+        android:id="@+id/settings_menu_aboutscreenspro"
+        android:title="@string/settings_menu_aboutscreenspro"/>
+
+</menu>
